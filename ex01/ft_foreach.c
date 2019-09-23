@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_putchar.c                                       :+:    :+:            */
+/*   ft_foreach.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/09/16 09:16:57 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/23 13:12:50 by averheij      ########   odam.nl         */
+/*   Created: 2019/09/23 13:10:09 by averheij       #+#    #+#                */
+/*   Updated: 2019/09/23 13:11:50 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_libft.h"
-
-void	ft_putchar(char c)
+void		ft_foreach(int *tab, int length, void (*f)(int))
 {
-	write(1, &c, 1);
+	int		i;
+
+	i = 0;
+	while (i < length)
+	{
+		f(tab[i]);
+		i++;
+	}
 }

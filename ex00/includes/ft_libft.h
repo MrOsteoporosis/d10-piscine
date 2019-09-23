@@ -6,13 +6,13 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/23 11:29:27 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/23 11:30:19 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/23 13:12:33 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_LIBFT_H
 # define FT_LIBFT_H
-#include <unistd.h>
+# include <unistd.h>
 
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
